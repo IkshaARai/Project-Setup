@@ -1,0 +1,232 @@
+/* .content-margin {
+    margin-left: 310px;
+    margin-right: 310px;
+} */
+
+/* Large Devices (1200px and up) */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* @media only screen and (max-width: 1200px) {
+    .col-m-1 {width: 12.5%;}
+    .col-m-2 {width: 25%;}
+    .col-m-3 {width: 37.5%;}
+    .col-m-4 {width: 50%;}
+    .col-m-5 {width: 62.5%;}
+    .col-m-6 {width: 75%;}
+    .col-m-7 {width: 87.5%;}
+    .col-m-8 {width: 100%;}
+}
+
+@media only screen and (max-width: 767px) {
+    .col-s-1 {width: 25%;}
+    .col-s-2 {width: 50%;}
+    .col-s-3 {width: 75%;}
+    .col-s-4 {width: 100%;}
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-family: "Cerebri-Bold";
+    font-size: 1rem;
+    color: #1D2A30;
+}
+
+.primary {
+    color: #F2F2F2;
+}
+
+.secondary {
+    color: #1D2A30;
+}
+
+.primary-bg {
+    background-color: #F2F2F2;
+}
+
+.secondary-bg {
+    background-color: #1D2A30;
+}
+
+h1 {
+    font-family: "Cinzel", serif;
+    font-size: 6rem;
+    font-weight: 300;
+    color: #F2F2F2;
+}
+
+h2 {
+    font-family: "Cinzel", serif;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #F2F2F2;
+}
+
+h3 {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 8%;
+    color: #1D2A30;
+}
+
+@font-face {
+    font-family: "Cerebri-Bold";
+    src: url("../fonts/Cerebri.Sans.Pro/CerebriSansPro-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Cerebri-Medium";
+    src: url("../fonts/Cerebri.Sans.Pro/CerebriSansPro-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Cerebri-Regular";
+    src: url("../fonts/Cerebri.Sans.Pro/CerebriSansPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Centaur-Regular";
+    src: url("../fonts/Centaur/CENTAUR.TTF");
+}
+
+h4 {
+    font-family: "Cerebri-Bold";
+    font-size: 3rem;
+    color: #1D2A30;
+    opacity: 30%;
+}
+
+h5 {
+    font-family: "Cerebri-Bold";
+    font-size: 1.5rem;
+    color: #1D2A30;
+}
+
+h6 {
+    font-family: "Cerebri-Regular";
+    font-size: 1.5rem;
+    color: #1D2A30;
+}
+
+.h7 {
+    font-family: "Cerebri-Bold";
+    font-size: 1.3rem;
+    color: #1D2A30;
+}
+
+.h8 {
+    font-family: "Cerebri-Bold";
+    font-size: 1rem;
+    color: #1D2A30;
+}
+
+.h9 {
+    font-family: "Cerebri-Medium";
+    font-size: 0.9rem;
+    color: #1D2A30;
+}
+
+.h10 {
+    font-family: "Cerebri-Regular";
+    font-size: 0.9rem;
+    color: #1D2A30;
+    line-height: 31.3px;
+}
+
+.h11 {
+    font-family: "Centaur-Regular";
+    font-size: 2.5rem;
+    color: #f2f2f2;
+    line-height: 50px;
+}
+
+.nav-button {
+    border-radius: 0.4rem;
+    padding: 0.5rem 1.1rem 0.3rem 1.1rem;
+    border-width: 0.1rem;
+    background-color: #F2F2F2;
+}
+
+.nav-button:hover {
+    color: #F2F2F2;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1.1rem 0.3rem 1.1rem;
+    border-width: 0.1rem;
+    background-color: #1D2A30;
+}
+
+.my-8rem {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.my-12rem {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+}
+
+.mt-16rem {
+    margin-top: 16rem;
+}
+
+.mt-10rem {
+    margin-top: 10rem;
+}
+
+.mt-5rem {
+    margin-top: 5rem;
+}
+
+.mb-2rem {
+    margin-bottom: 2rem;
+}
+
+button {
+    border-radius: 0.4rem;
+    padding: 0.4rem 3rem 0.3rem 3rem;
+    border-width: 0.1rem;
+    background-color: #F2F2F2;
+}
+
+button:hover {
+    border-radius: 0.4rem;
+    padding: 0.4rem 3rem 0.3rem 3rem;
+    border-width: 0.1rem;
+    background-color: #1D2A30;
+    color: #F2F2F2;
+}
+
+.footer-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/footer_image_2.png);
+}
+
+.img-hover:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease-in-out;
+}

@@ -1,0 +1,26 @@
+input, textarea, select {
+    box-sizing: border-box;
+    border: none;
+    background:rgb(242, 242, 242, 0.2);
+}
+
+input.h10, textarea.h10, ::placeholder {
+    color: #f2f2f2;
+}
+
+.form-button-styling {
+    border-radius: 0.4rem;
+    padding: 0.4rem 3rem 0.3rem 3rem;
+    border-width: 0.1rem;
+    background-color: #1D2A30;
+    color: #f2f2f2;
+    border-color: #f2f2f2;
+}
+
+select.h10 {
+    color: #f2f2f2;
+}
+
+/* option{
+    background:rgb(242, 242, 242, 0.2);
+} */
