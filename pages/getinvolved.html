@@ -5,82 +5,143 @@
         <title>Kathmandu Institute</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/contact.css">
+        <link rel="stylesheet" href="../css/getinvolved.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
         <script src="../js/script.js"></script>
         <script src="https://unpkg.com/feather-icons"></script>
 
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io//favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
         <link rel="stylesheet" type="text/css" href="../assets/feather/activity.svg">
         
     </head>
     <body class="primary-bg">
-        <nav class="primary-bg fixed-top p-2 shadow">
-            <div class="container d-flex justify-content-between align-content-center py-1 ">
-                <img src="../images/KI Logo.svg" class="col-1 w-auto pe-1 ">
-                <div class="col-3"></div>
-                <div class="col-8 d-flex flex-row justify-content-between secondary">
-                    <a href="../home.html" class="h10 pt-2 mb-0">Home</a>
-                    <a href="./about.html" class="h10 pt-2 mb-0">About Us</a>
-                    <a href="./projects.html" class="h10 pt-2 mb-0">Projects</a>
-                    <a href="./contact.html" class="h10 pt-2 mb-0">Contact Us</a>
-                    <a href="./getinvolved.html"><button class="nav-button h9">Get involved</button></a>
+        <nav id="navbar" class="primary-bg fixed-top p-2 shadow">
+            <div class="container">
+                <div class="mobile-nav d-lg-none py-3 ">
+                    <div class="logo-container">
+                        <img src="../images/KI Logo.svg" class="logo-img">
+                    </div>
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="desktop-nav d-none d-lg-flex justify-content-between align-content-center py-1">
+                    <div class="logo-container col-lg-4 d-flex flex-row justify-content-start align-content-center" >
+                        <img src="../images/KI Logo.svg" class="logo-img">
+                        <div class="logo-text h9 ms-4"><b>KATHMANDU <br> INSTITUTE</b></div>
+                    </div>
+                    <div class="col-lg-8 col-md-9 d-flex flex-row justify-content-between align-items-center secondary">
+                        <a href="../home.html" class="nav-link h10 ">Home</a>
+                        <a href="../pages/about.html" class="nav-link h10">About Us</a>
+                        <a href="../pages/projects.html" class="nav-link h10 ">Projects</a>
+                        <a href="../pages/contact.html" class="nav-link h10 ">Contact Us</a>
+                        <a href="../pages/getinvolved.html"><button class="nav-button h9">Get involved</button></a>
+                    </div>
+                </div>
+                <div class="mobile-nav-links d-lg-none">
+                    <a href="../home.html" class="nav-link h10">Home</a>
+                    <a href="../pages/about.html" class="nav-link h10">About Us</a>
+                    <a href="../pages/projects.html" class="nav-link h10">Projects</a>
+                    <a href="../pages/contact.html" class="nav-link h10">Contact Us</a>
+                    <a href="../pages/getinvolved.html" class="nav-link h10">Get involved</a>
                 </div>
             </div>
         </nav>
         <div class="container">
             <h3 class="mt-10rem mb-2rem">GET INVOLVED</h3>
         </div>
-        <div class="container my-8rem col-12 d-flex flex-row justify-content-between text-center gap-3">
-            <div class="col-4">
-                <div class="col-11 p-5 border border-secondary rounded-3 h-100">
-                    <img class="col-2 pt-5  pb-2" src="../images/getinvolved/volunteer.png">
-                    <h6 class="h7 pt-2">VOLUNTEERING</h6>
-                    <p class="h9 pt-2 pb-4 ">Volunteer at exhibitions: assist with setup, provide information, guide tours, and handle logistics to enhance visitor experience.</p>
-                </div>
+        <div class="container my-8rem col-12 d-flex flex-column flex-md-row justify-content-between text-center gap-3">
+            <div class="col-sm-12 col-md-4" id="volunteering">
+                <a href="./contact.html?type=volunteering#contactus-form">
+                    <div class="card1-hover col-11 p-5 border border-secondary rounded-4 h-100">
+                        <img class="col-2 pt-5 pb-2" src="../images/getinvolved/volunteer.png">
+                        <h6 class="h7 pt-2">VOLUNTEERING</h6>
+                        <p class="h9 pt-2 pb-4">Volunteer at exhibitions: assist with setup, provide information, guide tours, and handle logistics to enhance visitor experience.</p>
+                    </div>
+                    <div class="card1-hover-display pt-5 col-11 border border-secondary rounded-4 h-100 secondary-bg align-baseline ">
+                        <img class="col-2 pt-5 pb-2 px-2" src="../images/getinvolved/volunteer-white.png">
+                        <h6 class="h7 pt-5 pb-5"><b class="primary">CONTACT US</b></h6>
+                        <img class="col-12 overflow-hidden " src="../images/getinvolved/skyline-white.png">
+                    </div>
+                </a>
             </div>
-            <div class="col-4">
-                <div class="col-11 p-5 border border-secondary rounded-3 h-100">
-                    <img class="col-2 pt-5  pb-2" src="../images/getinvolved/charity.png">
-                    <h6 class="h7 pt-2">DONATION</h6>
-                    <p class="h9 pt-2 pb-4 ">Support us with donations, funding projects, covering operational costs, and aid through financial or in-kind contributions.</p>
-                </div>
+            <div class="col-sm-12 col-md-4" id="donation">
+                <a href="./contact.html?type=donation#contactus-form">
+                    <div class="card1-hover col-11 p-5 border border-secondary rounded-4 h-100">
+                        <img class="col-2 pt-5 pb-2" src="../images/getinvolved/charity.png">
+                        <h6 class="h7 pt-2">DONATION</h6>
+                        <p class="h9 pt-2 pb-4">Support us with donations, funding projects, covering operational costs, and aid through financial or in-kind contributions.</p>
+                    </div>
+                    <div class="card1-hover-display pt-5 col-11 border border-secondary rounded-4 h-100 secondary-bg align-baseline ">
+                        <img class="col-2 pt-5 pb-2 px-2" src="../images/getinvolved/charity-white.png">
+                        <h6 class="h7 pt-5 pb-5"><b class="primary">CONTACT US</b></h6>
+                        <img class="col-12 overflow-hidden " src="../images/getinvolved/skyline-white.png">
+                    </div>
+                </a>
             </div>
-           <div class="col-4">
-                <div class="col-11 p-5 border border-secondary rounded-3 h-100">
-                    <img class="col-2 pt-5  pb-2" src="../images/getinvolved/handshake.png">
-                    <h6 class="h7 pt-2">COLLABORATION</h6>
-                    <p class="h9 pt-2 pb-4 ">Open to partnerships, collaborations, and community engagement, where resources can be leveraged for sustainable solutions.</p>
-                </div>
-           </div>
+            <div class="col-sm-12 col-md-4" id="collaboration">
+                <a href="./contact.html?type=collaboration#contactus-form">
+                    <div class="card1-hover col-11 p-5 border border-secondary rounded-4 h-100">
+                        <img class="col-2 pt-5 pb-2" src="../images/getinvolved/handshake.png">
+                        <h6 class="h7 pt-2">COLLABORATION</h6>
+                        <p class="h9 pt-2 pb-4">Open to partnerships, collaborations, and community engagement, where resources can be leveraged for sustainable solutions.</p>
+                    </div>
+                    <div class="card1-hover-display pt-5 col-11 border border-secondary rounded-4 h-100 secondary-bg align-baseline ">
+                        <img class="col-2 pt-5 pb-2 px-2" src="../images/getinvolved/handshake-white.png">
+                        <h6 class="h7 pt-5 pb-5"><b class="primary">CONTACT US</b></h6>
+                        <img class="col-12 overflow-hidden " src="../images/getinvolved/skyline-white.png">
+                    </div>
+                </a>
+            </div>
         </div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                feather.replace();
+            });
+        </script>
+        
     </body>
-    <footer class="primary-bg">
+    <footer class="primary-bg ">
         <hr class="my-0 secondary opacity-100 border-2">
-        <div class="footer-image col-12 d-flex flex-column ">
-            <div class="col-12 container d-flex flex-row mt-5rem">
-                <div class="col-1">
-                    <img src="../images/KI Logo.svg" class="col-10">
+        <div class="footer-image">
+            <div class="container mt-5rem mb-2rem">
+                <div class="row gy-5 gy-sm-0 mt-0 mt-5rem">
+                    <div class="col-sm-6 col-md-4 d-flex align-content-start">
+                        <img src="../images/KI Logo.svg" class="col-3 mx-auto mx-sm-0 ">
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <div class=" d-flex flex-column flex-md-row text-center text-md-end justify-content-between ">
+                            <a href="../home.html"><p class="h9">Home</p></a>
+                            <a href="./about.html"><p class="h9">About Us</p></a>
+                            <a href="./projects.html"><p class="h9">Projects</p></a>
+                            <a href="./getinvolved.html"><p class="h9">Get Involved</p></a>
+                            <a href="./contact.html"><p class="h9">Contact Us</p></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4"></div>
-                <div class="col-7 d-flex flex-row justify-content-between ">
-                    <p class="h9">Home</p>
-                    <p class="h9">About Us</p>
-                    <p class="h9">Projects</p>
-                    <p class="h9">Get Involved</p>
-                    <p class="h9">Contact Us</p>
-                </div>
-            </div>
-            <div class="col-12 container d-flex flex-row mt-5rem mb-2rem">
-                <div class="col-5">
-                    <i data-feather="circle"></i>
-                </div>
-                <div class="col-7 d-flex flex-column">
-                    <p class="h8 col-12 text-start ">GET IN TOUCH</p>
-                    <div class="col-12 d-flex flex-row text-start justify-content-between ">
-                        <p class="h9">kathmanduinstitute@gmail.com</p>
-                        <p class="h9 text-end">© 2024 Kathmandu Institute. All Rights Reserved. </p>
+                <div class="row gy-5 gy-sm-0 mt-0 mt-sm-5">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="col-4 d-flex justify-content-between mx-auto mx-sm-0">
+                            <a href="https://www.instagram.com/"><i data-feather="instagram" class="filled-icon"></i></a>
+                            <a href="https://www.facebook.com/"><i data-feather="facebook" class="thin-stroke-icon"></i></a>
+                            <a href="tel:+1234567890"><i data-feather="phone" class="thin-stroke-icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <p class="h8 text-center text-md-start ">GET IN TOUCH</p>
+                        <div class=" d-flex flex-column flex-md-row text-center text-md-end justify-content-between ">
+                            <p class="h9">kathmanduinstitute@gmail.com</p>
+                            <p class="h9 text-center text-md-end">© 2024 Kathmandu Institute. All Rights Reserved. </p>
+                        </div>
                     </div>
                 </div>
             </div>

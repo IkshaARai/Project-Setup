@@ -9,31 +9,60 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+        <script src="../js/script_about.js"></script>
         <script src="../js/script.js"></script>
         <script src="https://unpkg.com/feather-icons"></script>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io//favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
         
     </head>
     <body class="primary-bg">
-        <nav class="primary-bg fixed-top p-2 shadow">
-            <div class="container d-flex justify-content-between align-content-center py-1 ">
-                <img src="../images/KI Logo.svg" class="col-1 w-auto pe-1 ">
-                <div class="col-3"></div>
-                <div class="col-8 d-flex flex-row justify-content-between secondary">
-                    <a href="../home.html" class="h10 pt-2 mb-0">Home</a>
-                    <a href="./about.html" class="h8 pt-2 mb-0">About Us</a>
-                    <a href="./projects.html" class="h10 pt-2 mb-0">Projects</a>
-                    <a href="./contact.html" class="h10 pt-2 mb-0">Contact Us</a>
-                    <a href="./getinvolved.html"><button class="nav-button h9">Get involved</button></a>
+        <nav id="navbar" class="primary-bg fixed-top p-2 shadow">
+            <div class="container">
+                <div class="mobile-nav d-lg-none py-3 ">
+                    <div class="logo-container">
+                        <img src="../images/KI Logo.svg" class="logo-img">
+                    </div>
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="desktop-nav d-none d-lg-flex justify-content-between align-content-center py-1">
+                    <div class="logo-container col-lg-4 d-flex flex-row justify-content-start align-content-center" >
+                        <img src="../images/KI Logo.svg" class="logo-img">
+                        <div class="logo-text h9 ms-4"><b>KATHMANDU <br> INSTITUTE</b></div>
+                    </div>
+                    <div class="col-lg-8 col-md-9 d-flex flex-row justify-content-between align-items-center secondary">
+                        <a href="../home.html" class="nav-link h10 ">Home</a>
+                        <a href="../pages/about.html" class="active-page">About Us</a>
+                        <a href="../pages/projects.html" class="nav-link h10 ">Projects</a>
+                        <a href="../pages/contact.html" class="nav-link h10 ">Contact Us</a>
+                        <a href="../pages/getinvolved.html"><button class="nav-button h9">Get involved</button></a>
+                    </div>
+                </div>
+                <div class="mobile-nav-links d-lg-none">
+                    <a href="../home.html" class="nav-link h10">Home</a>
+                    <a href="../pages/about.html" class="nav-link h10">About Us</a>
+                    <a href="../pages/projects.html" class="nav-link h10">Projects</a>
+                    <a href="../pages/contact.html" class="nav-link h10">Contact Us</a>
+                    <a href="../pages/getinvolved.html" class="nav-link h10">Get involved</a>
                 </div>
             </div>
         </nav>
+        
+        
+        
         <div class="container my-8rem">
             <h3 class="mb-5 ">about us</h3>
-            <div class="d-flex flex-row ">
-                <img src="../images/about/image_1.png" class="col-5">
-                <div class="col-1"></div>
-                <div class="col-6 ">
-                    <h3 class="mb-5 fs-2 ">our mission</h3>
+            <div class="d-flex justify-content-between flex-column flex-md-row">
+                <img src="../images/about/image_1.png" class="col-md-5">
+                <div class="col-md-6">
+                    <h3 class="mb-5 fs-2 mt-5 mt-md-0 ">our mission</h3>
                     <div class="d-flex flex-row align-items-center">
                         <h4 class="col-2">01</h4>
                         <p class="h10 col-10 ">A center for research, learning, and debate on contemporary cities leading to Design and planning of future urban landscapes.</p>
@@ -59,12 +88,12 @@
         </div>
         <div class="image my-12rem">
             <div class="container">
-                <p class="h11 col-6">"Urban planning is not just about structures; it's about preserving identities and nurturing communities."</p>
+                <p class="h11 col-6 divider-quote">"Urban planning is not just about structures; it's about preserving identities and nurturing communities."</p>
                 <div class="col-6"></div>
             </div>
         </div>
-        <div class="container d-flex flex-row my-12rem">
-            <div class="col-8">
+        <div class="container d-flex flex-column flex-md-row my-12rem">
+            <div class=" col-md-8 ">
                 <h5>Our Story</h5>
                 <p class="h10">
                     Cities, since ancient times, have been the manifestation of the highest achievements of civilizations. Cities acquire their own form and culture, as they develop historically over centuries. It is the Form and Culture, which is unique to each city, gives it its identity, attitude, heritage, historical bonds, its special strengths, a strong sense of place, which in turn has established the competitiveness and innovativeness that drive great cities. Despite the overwhelming trends towards a homogenization of physical/visual characteristics of urban projects in cities all over the world, it is the distinction and difference between one place and the other that we cherish and it gives it the economic competitiveness as well.
@@ -84,83 +113,172 @@
                     Most importantly, the Institute is envisaged as a Place of engagement on urban issues, challenges and ideas, where politicians, bureaucrats, historians, social scientists, artists, economists, businessmen, architects, urban planners/designers, Engineers, journalists can all enthusiastically engage in. Such engagement also offers a much broader platform for the urban professionals to innovate fresh and out of the box ideas and solutions in their tasks of actually designing and building the city.
                 </p>
             </div>
-            <div class="col-1"></div>
-            <div class="col-3 d-flex flex-column">
-                <img src="../images/about/image_4.png" class="col-10 mb-4">
-                <img src="../images/about/image_5.png" class="col-10 mb-4">
-                <img src="../images/about/image_6.png" class="col-10 mb-4">
-                <img src="../images/about/image_7.png" class="col-10 mb-4">
-                <img src="../images/about/image_8.png" class="col-10 mb-4">
-                <img src="../images/about/image_9.png" class="col-10 mb-4">
+            <div class="col-md-1"></div>
+            <div class="col-md-3 d-flex flex-column mt-5 mt-md-0">
+                <img src="../images/about/image_4.png" class="col-10 mb-4 mx-auto ">
+                <img src="../images/about/image_5.png" class="col-10 mb-4 mx-auto ">
+                <img src="../images/about/image_6.png" class="col-10 mb-4 mx-auto ">
+                <img src="../images/about/image_7.png" class="col-10 mb-4 mx-auto ">
+                <img src="../images/about/image_8.png" class="col-10 mb-4 mx-auto ">
+                <img src="../images/about/image_9.png" class="col-10 mb-4 mx-auto ">
             </div>
         </div>
-        <div class="container my-12rem">
-            <h5 class="p-3 ">Our Founders</h5>
-            <div class="col-12 d-flex flex-row">
-                <div class="wrapper col-3 p-3">
-                    <div class=" card-hover">
-                        <img src="../images/home/image_8.png" class="col-12 rounded-4 ">
-                        <div class="founder-name">
-                            <h5>BIRESH SHAH</h5>
-                            <p>ARCHITECT</p>
-                        </div>
-                    </div>
+        <div class="container my-12rem" id="slider-container-aboutus">
+            <div class="container d-flex justify-content-between flex-row align-items-center col-12">
+                <h5 class="p-3 col-11">Our Founders</h5>
+                <div class="d-flex flex-row justify-content-between col-1">
+                    <span onclick="slideRight()" id="slider-btn-right-aboutus"></span>
+                    <span onclick="slideLeft()" id="slider-btn-left-aboutus"></span>
                 </div>
-                <div class="wrapper col-3 p-3 mt-5">
-                    <div class=" card-hover">
-                        <img src="../images/home/image_9.png" class="col-12 rounded-4 ">
-                        <div class="founder-name">
-                            <h5>JHARNA JOSHI</h5>
-                            <p>ARCHITECT</p>
-                        </div>
+            </div>
+            <div>
+                <div class="col-12 d-flex flex-row " id="slider-aboutus">
+                    <div class="wrapper col-3 p-3 slide">
+                        <span>
+                            <div class=" card-hover">
+                                <img src="../images/home/image_8.png" class="col-12 rounded-4 ">
+                                <div class="founder-name">
+                                    <h5>BIRESH SHAH</h5>
+                                    <p>ARCHITECT</p>
+                                </div>
+                            </div>
+                        </span>
                     </div>
-                </div>
-                <div class="wrapper col-3 p-3">
-                    <div class=" card-hover">
-                        <img src="../images/home/image_10.png" class="col-12 rounded-4 ">
-                        <div class="founder-name">
-                            <h5>DEEPAK PANT</h5>
-                            <p>ARCHITECT</p>
-                        </div>
+                    <div class="wrapper col-3 p-3 mt-5 slide">
+                        <span>
+                            <div class=" card-hover">
+                                <img src="../images/home/image_9.png" class="col-12 rounded-4 ">
+                                <div class="founder-name">
+                                    <h5>JHARNA JOSHI</h5>
+                                    <p>ARCHITECT</p>
+                                </div>
+                            </div>
+                        </span>
                     </div>
-                </div>
-                <div class="wrapper col-3 p-3 mt-5">
-                    <div class=" card-hover">
-                        <img src="../images/home/image_11.png" class="col-12 rounded-4 ">
-                        <div class="founder-name">
-                            <h5>RITU RAJ RAI</h5>
-                            <p>ARCHITECT</p>
-                        </div>
+                    <div class="wrapper col-3 p-3 slide">
+                        <span>
+                            <div class=" card-hover">
+                                <img src="../images/home/image_10.png" class="col-12 rounded-4 ">
+                                <div class="founder-name">
+                                    <h5>DEEPAK PANT</h5>
+                                    <p>ARCHITECT</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="wrapper col-3 p-3 mt-5 slide">
+                        <span>
+                            <div class=" card-hover">
+                                <img src="../images/home/image_11.png" class="col-12 rounded-4 ">
+                                <div class="founder-name">
+                                    <h5>RITU RAJ RAI</h5>
+                                    <p>ARCHITECT</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="wrapper col-3 p-3 slide">
+                        <span>
+                            <div class=" card-hover">
+                                <img src="../images/home/image_12.png" class="col-12 rounded-4 ">
+                                <div class="founder-name">
+                                    <h5>ANJU MALLA</h5>
+                                    <p>ARCHITECT</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="wrapper col-3 p-3 mt-5 slide">
+                        <span>
+                            <div class=" card-hover">
+                                <img src="../images/home/image_13.png" class="col-12 rounded-4 ">
+                                <div class="founder-name">
+                                    <h5>SHIRISH BHATTA</h5>
+                                    <p>ARCHITECT</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="wrapper col-3 p-3 slide">
+                        <span>
+                            <div class=" card-hover">
+                                <img src="../images/home/image_14.png" class="col-12 rounded-4 ">
+                                <div class="founder-name">
+                                    <h5>MOHAN MURTI PANT</h5>
+                                    <p>ARCHITECT</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="wrapper col-3 p-3 mt-5 slide">
+                        <span>
+                            <div class=" card-hover">
+                                <img src="../images/home/image_15.png" class="col-12 rounded-4 ">
+                                <div class="founder-name">
+                                    <h5>POONAM SHAH</h5>
+                                    <p>ARCHITECT</p>
+                                </div>
+                            </div>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                feather.replace();
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const hamburgerMenu = document.querySelector('.hamburger-menu');
+                const mobileNavLinks = document.querySelector('.mobile-nav-links');
+
+                // Toggle mobile navigation links when hamburger menu is clicked
+                hamburgerMenu.addEventListener('click', function() {
+                    hamburgerMenu.classList.toggle('change');
+                    mobileNavLinks.classList.toggle('active');
+                });
+            });
+        </script>
+
+        <script src="../js/script_about.js"></script>
+        <script src="../js/script.js"></script>
     </body>
-    <footer>
+    <footer class="primary-bg ">
         <hr class="my-0 secondary opacity-100 border-2">
-        <div class="footer-image col-12 d-flex flex-column ">
-            <div class="col-12 container d-flex flex-row mt-5rem">
-                <div class="col-1">
-                    <img src="../images/KI Logo.svg" class="col-10">
+        <div class="footer-image">
+            <div class="container mt-5rem mb-2rem">
+                <div class="row gy-5 gy-sm-0 mt-0 mt-5rem">
+                    <div class="col-sm-6 col-md-4">
+                        <img src="../images/KI Logo.svg" class="col-3 mx-auto mx-sm-0 ">
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <div class=" d-flex flex-column flex-md-row text-center text-md-end justify-content-between ">
+                            <a href="../home.html"><p class="h9">Home</p></a>
+                            <a href="./about.html"><p class="h9">About Us</p></a>
+                            <a href="./projects.html"><p class="h9">Projects</p></a>
+                            <a href="./getinvolved.html"><p class="h9">Get Involved</p></a>
+                            <a href="./contact.html"><p class="h9">Contact Us</p></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4"></div>
-                <div class="col-7 d-flex flex-row justify-content-between ">
-                    <p class="h9">Home</p>
-                    <p class="h9">About Us</p>
-                    <p class="h9">Projects</p>
-                    <p class="h9">Get Involved</p>
-                    <p class="h9">Contact Us</p>
-                </div>
-            </div>
-            <div class="col-12 container d-flex flex-row mt-5rem mb-2rem">
-                <div class="col-5">
-                    <i data-feather="circle"></i>
-                </div>
-                <div class="col-7 d-flex flex-column">
-                    <p class="h8 col-12 text-start ">GET IN TOUCH</p>
-                    <div class="col-12 d-flex flex-row text-start justify-content-between ">
-                        <p class="h9">kathmanduinstitute@gmail.com</p>
-                        <p class="h9 text-end">© 2024 Kathmandu Institute. All Rights Reserved. </p>
+                <div class="row gy-5 gy-sm-0 mt-0 mt-sm-5">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="col-4 d-flex justify-content-between mx-auto mx-sm-0">
+                            <a href="https://www.instagram.com/"><i data-feather="instagram" class="filled-icon"></i></a>
+                            <a href="https://www.facebook.com/"><i data-feather="facebook" class="thin-stroke-icon"></i></a>
+                            <a href="tel:+1234567890"><i data-feather="phone" class="thin-stroke-icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <p class="h8 text-center text-md-start ">GET IN TOUCH</p>
+                        <div class=" d-flex flex-column flex-md-row text-center text-md-end justify-content-between ">
+                            <p class="h9">kathmanduinstitute@gmail.com</p>
+                            <p class="h9 text-center text-md-end">© 2024 Kathmandu Institute. All Rights Reserved. </p>
+                        </div>
                     </div>
                 </div>
             </div>

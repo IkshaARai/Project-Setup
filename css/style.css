@@ -175,6 +175,20 @@ h6 {
     background-color: #1D2A30;
 }
 
+.nav-link:hover {
+    font-family: "Cerebri-Bold";
+    font-size: 0.9rem;
+    color: #1D2A30;
+    line-height: 31.3px;
+}
+
+.active-page {
+    font-family: "Cerebri-Bold";
+    font-size: 0.9rem;
+    color: #1D2A30;
+    line-height: 31.3px;
+}
+
 .my-8rem {
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -187,6 +201,10 @@ h6 {
 
 .mt-16rem {
     margin-top: 16rem;
+}
+
+.mt-20rem {
+    margin-top: 20rem;
 }
 
 .mt-10rem {
@@ -223,10 +241,144 @@ button:hover {
     text-align: center;
     background-position: center;
     background-size: cover;
-    background-image: url(../images/footer_image_2.png);
+    background-image: linear-gradient(#f2f2f280, #f2f2f280), url("../images/footer_image_2.png");
+}
+
+.img-hover {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.5s ease-in-out; /* Add transition effect */
 }
 
 .img-hover:hover {
     transform: scale(1.02);
     transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.logo-container {
+    position: relative;
+    display: inline-block;
+}
+
+.logo-img {
+    display: block;
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out; /* Add transition effect */
+}
+
+.logo-text {
+    opacity: 0; /* Initially hide text */
+    transition: opacity 0.3s ease-in-out; /* Add transition effect */
+}
+
+.logo-container:hover .logo-img {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.logo-container:hover { 
+    .logo-text {
+    opacity: 1; /* Show text on hover */
+    }
+}
+
+/* footer icons */
+
+.filled-icon {
+    color: #f2f2f2; 
+    width: 2rem; 
+    height: 2rem;
+}
+
+.thin-stroke-icon {
+    color: #1D2A30;
+    stroke-width: 5%;
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+img, svg {
+    fill: #1D2A30;
+}
+
+/* footer icons ends here */
+
+.navbar-transparent {
+    background-color: #f2f2f24d; /* Initial low opacity */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+    .nav-button {
+        color: #1D2A30;
+        border-radius: 0.4rem;
+        padding: 0.5rem 1.1rem 0.3rem 1.1rem;
+        border-width: 0.1rem;
+        background-color: #f2f2f24d;
+    }
+    
+    .nav-button:hover {
+        border-radius: 0.4rem;
+        padding: 0.5rem 1.1rem 0.3rem 1.1rem;
+        border-width: 0.1rem;
+        background-color: #F2F2F2;
+    }
+}
+
+.navbar-solid {
+    background-color: #f2f2f2; /* Fully opaque background color */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+/* nav bar responsive design */
+
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #1D2A30;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Change the background color of the bars when menu is opened */
+.change .bar {
+    background-color: #333;
+}
+
+/* Change the color of the bars when menu is opened */
+.change-color .bar {
+    background-color: #fff;
+}
+
+/* Hide mobile navigation links by default */
+.mobile-nav-links {
+    display: none;
+}
+
+.mobile-nav-links a {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 991px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav-links.active {
+        display: block;
+    }
+  
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

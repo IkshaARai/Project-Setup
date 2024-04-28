@@ -5,36 +5,339 @@
         <title>Kathmandu Institute</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/about.css">
+        <link rel="stylesheet" href="../css/projects.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
         <script src="../js/script.js"></script>
         <script src="https://unpkg.com/feather-icons"></script>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io//favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
     </head>
     <body class="primary-bg">
-        <nav class="primary-bg fixed-top p-2 shadow">
-            <div class="container d-flex justify-content-between align-content-center py-1 ">
-                <img src="../images/KI Logo.svg" class="col-1 w-auto pe-1 ">
-                <div class="col-3"></div>
-                <div class="col-8 d-flex flex-row justify-content-between secondary">
-                    <a href="../home.html" class="h10 pt-2 mb-0">Home</a>
-                    <a href="./about.html" class="h10 pt-2 mb-0">About Us</a>
-                    <a href="./projects.html" class="h8 pt-2 mb-0">Projects</a>
-                    <a href="./contact.html" class="h10 pt-2 mb-0">Contact Us</a>
-                    <a href="./getinvolved.html"><button class="nav-button h9">Get involved</button></a>
+        <nav id="navbar" class="primary-bg fixed-top p-2 shadow">
+            <div class="container">
+                <div class="mobile-nav d-lg-none py-3 ">
+                    <div class="logo-container">
+                        <img src="../images/KI Logo.svg" class="logo-img">
+                    </div>
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="desktop-nav d-none d-lg-flex justify-content-between align-content-center py-1">
+                    <div class="logo-container col-lg-4 d-flex flex-row justify-content-start align-content-center" >
+                        <img src="../images/KI Logo.svg" class="logo-img">
+                        <div class="logo-text h9 ms-4"><b>KATHMANDU <br> INSTITUTE</b></div>
+                    </div>
+                    <div class="col-lg-8 col-md-9 d-flex flex-row justify-content-between align-items-center secondary">
+                        <a href="../home.html" class="nav-link h10 ">Home</a>
+                        <a href="../pages/about.html" class="nav-link h10 ">About Us</a>
+                        <a href="../pages/projects.html" class=" active-page">Projects</a>
+                        <a href="../pages/contact.html" class="nav-link h10 ">Contact Us</a>
+                        <a href="../pages/getinvolved.html"><button class="nav-button h9">Get involved</button></a>
+                    </div>
+                </div>
+                <div class="mobile-nav-links d-lg-none">
+                    <a href="../home.html" class="nav-link h10">Home</a>
+                    <a href="../pages/about.html" class="nav-link h10">About Us</a>
+                    <a href="../pages/projects.html" class="nav-link h10">Projects</a>
+                    <a href="../pages/contact.html" class="nav-link h10">Contact Us</a>
+                    <a href="../pages/getinvolved.html" class="nav-link h10">Get involved</a>
                 </div>
             </div>
         </nav>
         <h1 class="mt-16rem secondary text-center container ">PROJECTS</h1>
-        <div class="container d-flex flex-row mt-5 container ">
-            <img src="../images/projects/image_1.png" class="col-3 px-2 h-100 ">
-            <img src="../images/projects/image_2.png" class="col-2 px-2 h-100 ">
-            <img src="../images/projects/image_3.png" class="col-2 px-2 h-100 ">
-            <img src="../images/projects/image_4.png" class="col-2 px-2 h-100 ">
-            <img src="../images/projects/image_5.png" class="col-3 px-2 h-100 ">
+        <div class="container d-flex flex-row my-5 container ">
+            <img src="../images/projects/image_1.png" class="col-3 px-1 px-sm-2 h-100 ">
+            <img src="../images/projects/image_2.png" class="col-2 px-1 px-sm-2 h-100 ">
+            <img src="../images/projects/image_3.png" class="col-2 px-1 px-sm-2 h-100 ">
+            <img src="../images/projects/image_4.png" class="col-2 px-1 px-sm-2 h-100 ">
+            <img src="../images/projects/image_5.png" class="col-3 px-1 px-sm-2 h-100 ">
+        </div>    
+
+        <div class="container accordion my-12rem" id="accordionCard">
+            <div class="my-5 clickable" id="project1">
+                <div id="headingOne">
+                    <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="d-flex justify-content-between flex-column flex-sm-row">
+                            <div class="col-sm-5">
+                                <h5>Modern Encounters in Architecture</h5>
+                                <p class="secondary">23rd March 2024</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li>
+                                        The program titled "The Early Modern Architecture of Kathmandu" offers a comprehensive exploration of Kathmandu's architectural landscape during the transformative early modern period, a time marked by significant socio-political shifts and cultural exchanges.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-1 d-flex flex-sm-row-reverse">
+                                <img src="../images/projects/arrow.png" class="horizontal-arrow m-3">
+                                <img src="../images/projects/arrow-vertical.png" class="vertical-arrow m-3" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionCard">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between flex-column flex-sm-row">
+                            <div class="col-sm-5">
+                                <img src="../images/projects/project_1.png" class="w-75">
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li>
+                                        Delving beyond mere structures, this program meticulously examines the architectural evolution of Kathmandu, aiming to unravel the intricate layers of cultural influences and historical contexts that shaped its built environment during this pivotal era.
+                                    </li>
+                                    <li>
+                                        Through an interdisciplinary approach encompassing historical research, architectural analysis, and cultural studies, the program seeks to provide a nuanced understanding of how architectural styles in Kathmandu evolved and diversified during the early modern period.
+                                    </li>
+                                    <li>
+                                        By scrutinizing architectural features, construction techniques, and spatial arrangements, the program uncovers the fusion of traditional Newar architecture with external influences, including elements from the Mughal Empire, European colonialism, and regional trade routes.
+                                    </li>
+                                    <li>
+                                        Furthermore, the program showcases iconic architectural landmarks such as palaces, temples, and public buildings, illuminating their significance as symbols of power, religious devotion, and civic pride in early modern Kathmandu.
+                                    </li>
+                                    <li>
+                                        Beyond mere documentation, the program advocates for the preservation and conservation of Kathmandu's early modern architecture as a vital component of the city's cultural heritage. It underscores the importance of proactive measures to safeguard these architectural treasures from threats such as urbanization, neglect, and natural disasters.
+                                    </li>
+                                    <li>
+                                        Through community engagement initiatives, educational outreach, and collaborative partnerships with local authorities and heritage organizations, the program seeks to raise awareness about the historical and cultural significance of Kathmandu's architectural heritage and mobilize support for its preservation and sustainable management.
+                                    </li>
+                                    <li>
+                                        Ultimately, the program aspires to foster a deeper appreciation for Kathmandu's rich architectural legacy among residents, visitors, scholars, and policymakers alike, ensuring that future generations inherit a vibrant and culturally enriched urban environment that reflects the city's storied past and promising future.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="my-5 clickable" id="project2">
+                <div id="headingOne">
+                    <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="d-flex justify-content-between flex-column flex-sm-row">
+                            <div class="col-sm-5">
+                                <h5 class="pe-5">Documentation of Early Modern Architecture in Kathmandu</h5>
+                                <p class="secondary">26th November 2023</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li>
+                                        The Documentation of Early Modern Architecture in Kathmandu program is a comprehensive initiative aimed at shedding light on the architectural heritage of Kathmandu during the transformative early modern period. Held at Martins Chautari Seminar Hall in Thapathali, this program brings together three distinguished architects: Biresh Shah, Jharna Joshi, and Rahul Muni Bajracharya, to share their insights and expertise.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-1 d-flex flex-sm-row-reverse">
+                                <img src="../images/projects/arrow.png" class="horizontal-arrow m-3">
+                                <img src="../images/projects/arrow-vertical.png" class="vertical-arrow m-3" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionCard">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between flex-column flex-sm-row">
+                            <div class="col-sm-5">
+                                <img src="../images/projects/project_2.png" class="w-75">
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li>
+                                        The program serves as a platform for these renowned architects to delve into the intricate details of Kathmandu's architectural landscape during the early modern era. Through a series of engaging talks and discussions, participants gain valuable insights into the evolution of architectural styles, influences, and innovations that shaped the city's built environment.
+                                    </li>
+                                    <li>
+                                        One of the key highlights of the program is the emphasis on research conducted by the organizing NGO. Through meticulous research efforts, the NGO has curated a wealth of information on modern architectures in Nepal, drawing from the works of both Nepali architects and architects from abroad. This research forms the backbone of the program, providing attendees with a comprehensive understanding of the diverse architectural influences and contributions that have shaped Kathmandu's urban fabric.
+                                    </li>
+                                    <li>
+                                        Moreover, the program showcases a collection of meticulously derived drawings, offering a visual narrative of Kathmandu's architectural evolution during the early modern period. These drawings serve as valuable artifacts, capturing the essence and intricacies of various architectural styles, structures, and landmarks that define Kathmandu's rich cultural heritage.
+                                    </li>
+                                    <li>
+                                        Overall, the Documentation of Early Modern Architecture in Kathmandu program stands as a testament to the importance of preserving and celebrating the architectural legacy of Kathmandu. By bringing together architects, researchers, and enthusiasts, the program fosters a deeper appreciation for the city's architectural heritage and stimulates dialogue on the importance of conservation and sustainable development in safeguarding Kathmandu's historic built environment for future generations.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="my-5 clickable" id="project3">
+                <div id="headingOne">
+                    <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="d-flex justify-content-between flex-column flex-sm-row">
+                            <div class="col-sm-5">
+                                <h5 class="pe-5">Modern Architecture in India</h5>
+                                <p class="secondary">27th November 2021</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li>
+                                        "Modern Architecture in India: A Critical Viewpoint" offers a captivating exploration into the evolution and critique of modern architectural practices in India and South Asia. Anchored by an online lecture by esteemed architect Professor Miki Desai, the program unfolds as a journey through the rich tapestry of architectural narratives that define the region. Professor Desai's profound insights and scholarly reflections serve as guiding lights, illuminating the complexities and significance of contemporary architectural endeavors.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-1 d-flex flex-sm-row-reverse">
+                                <img src="../images/projects/arrow.png" class="horizontal-arrow m-3">
+                                <img src="../images/projects/arrow-vertical.png" class="vertical-arrow m-3" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionCard">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between flex-column flex-sm-row">
+                            <div class="col-sm-5">
+                                <img src="../images/projects/project_3.png" class="w-75">
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li>
+                                        With a keen focus on India, the program delves into the diverse styles, influences, and challenges that shape modern architectural practices. Through vivid case studies and compelling examples, participants gain a deeper understanding of the architectural innovations and cultural dynamics that define the Indian architectural landscape. Moreover, the program extends its purview to encompass the broader South Asian context, showcasing architectural gems from neighboring countries and fostering cross-cultural dialogue and exchange.
+                                    </li>
+                                    <li>
+                                        At its core, the program fosters critical inquiry and debate, challenging participants to question established norms and reimagine the future of architecture in India and beyond. Professor Desai's thought-provoking discourse sparks dynamic conversations, encouraging participants to explore alternative perspectives and envision innovative approaches to architectural design and practice.
+                                    </li>
+                                    <li>
+                                        The interactive online format provides a dynamic platform for engagement and collaboration, transcending geographical barriers to unite architects, scholars, students, and enthusiasts in a shared exploration of architectural narratives. Through live discussions and interactive sessions, participants actively contribute to shaping the discourse and advancing critical dialogue within the architectural community.
+                                    </li>
+                                    <li>
+                                        As the program unfolds, participants emerge with enriched perspectives and renewed inspiration, galvanized by the depth of insights shared and the diversity of viewpoints encountered. The program's impact extends far beyond its duration, igniting continued exploration, dialogue, and innovation within the realm of modern architecture in India and South Asia.
+                                    </li>
+                                    <li>
+                                        Ultimately, "Modern Architecture in India: A Critical Viewpoint" serves as a catalyst for fostering deeper appreciation, critical engagement, and collaborative action within the architectural community. It champions a vision where architectural innovation harmonizes with cultural heritage, societal aspirations, and the evolving needs of contemporary society, shaping a future where architecture becomes a catalyst for positive change and transformation.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="my-5 clickable" id="project4">
+                <div id="headingOne">
+                    <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="d-flex justify-content-between flex-column flex-sm-row">
+                            <div class="col-sm-5">
+                                <h5 class="pe-5">Exploring Nepal's Urban Landscape</h5>
+                                <p class="secondary">17th May 2021</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li>
+                                        "Exploring Nepal's Urban Landscape" invites participants on a captivating journey through the vibrant tapestry of Nepal's cities and towns. This immersive program delves into the intricate layers of Nepal's urban environment, offering insights into its historical, cultural, and architectural significance. Through a series of guided tours, interactive workshops, and insightful discussions, participants embark on an exploration of Nepal's urban fabric, unraveling its rich heritage and contemporary challenges.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-1 d-flex flex-sm-row-reverse">
+                                <img src="../images/projects/arrow.png" class="horizontal-arrow m-3">
+                                <img src="../images/projects/arrow-vertical.png" class="vertical-arrow m-3" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionCard">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between flex-column flex-sm-row">
+                            <div class="col-sm-5">
+                                <img src="../images/projects/project_4.png" class="w-75">
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li>
+                                        Led by seasoned experts and local guides, the program offers a unique opportunity to discover Nepal's urban landscape from diverse perspectives. Participants delve into the bustling streets of Kathmandu, exploring its ancient alleyways, majestic temples, and bustling marketplaces. They uncover the hidden gems of Patan and Bhaktapur, immersing themselves in the timeless charm of Newari architecture and craftsmanship.
+                                    </li>
+                                    <li>
+                                        Beyond the Kathmandu Valley, the program ventures into Nepal's emerging urban centers, shedding light on the dynamic evolution of cities such as Pokhara, Biratnagar, and Dharan. Participants gain insights into the social, economic, and environmental dynamics shaping these urban landscapes, from rapid urbanization and infrastructure development to cultural preservation and community resilience.
+                                    </li>
+                                    <li>
+                                        The program also delves into contemporary urban challenges and innovative solutions, exploring themes such as sustainable urban planning, heritage conservation, and community-led development. Through interactive workshops and engaging discussions, participants collaborate with local stakeholders to address pressing issues and envision a more inclusive and sustainable future for Nepal's cities.
+                                    </li>
+                                    <li>
+                                        In addition to its educational components, the program offers ample opportunities for cultural immersion and experiential learning. Participants engage with local communities, artisans, and entrepreneurs, gaining firsthand insights into the daily life and cultural traditions of Nepal's urban dwellers. From traditional craft demonstrations to culinary experiences and cultural performances, each encounter deepens participants' appreciation for Nepal's rich cultural heritage.
+                                    </li>
+                                    <li>
+                                        As the program unfolds, participants emerge with a newfound appreciation for Nepal's urban diversity and complexity. Inspired by the stories and experiences shared, they return home with a deeper understanding of Nepal's urban landscape and a renewed commitment to promoting sustainable development and cultural preservation in their own communities. "Exploring Nepal's Urban Landscape" is more than a program—it's a transformative journey that fosters connections, fosters understanding, and empowers change-makers to shape a more resilient and inclusive urban future.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
-        <div class="d-flex flex-column my-12rem container ">
+        
+
+        <!-- <div class="d-flex flex-column my-12rem container accordion" id="accordionCard">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link d-flex flex-row my-5" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div>
+                        <h5>Modern Encounters in Architecture</h5>
+                        <p class="secondary">23rd March 2024</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>The program titled "The Early Modern Architecture of Kathmandu" offers a comprehensive exploration of Kathmandu's architectural landscape during the transformative early modern period, a time marked by significant socio-political shifts and cultural exchanges.</li>
+                            <li>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionCard">
+                                    <div class="card-body">
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                  </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="../images/projects/arrow.png" class="horizontal-arrow">
+                  </button>
+                </h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Collapsible Group Item #2
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionCard">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Collapsible Group Item #3
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionCard">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div> -->
+        
+
+        <!-- <div class="d-flex flex-column my-12rem container ">
             <div class="d-flex flex-row my-5">
                 <div class="col-5">
                     <h5>Modern Encounters in Architecture</h5>
@@ -47,8 +350,50 @@
                         </li>
                     </ul>
                 </div>
+                <div class="col-1 d-flex flex-row-reverse "  class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <img src="../images/projects/arrow.png" class="horizontal-arrow">
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex my-5 justify-content-between " >
+                <div class="col-5">
+                    <h5>Modern Encounters in Architecture</h5>
+                    <p class="secondary">23rd March 2024</p>
+                    <img src="../images/projects/project_1.png" class="w-75">
+                </div>
+                <div class="col-5">
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur quam ut augue efficitur dignissim. Suspendisse potenti. Praesent et massa ut nunc venenatis egestas. 
+                        </li>
+                        <li class="collapse multi-collapse" id="multiCollapseExample1"> The program titled "The Early Modern Architecture of Kathmandu" offers a comprehensive exploration of Kathmandu's architectural landscape during the transformative early modern period, a time marked by significant socio-political shifts and cultural exchanges.
+                            <li>
+                                Delving beyond mere structures, this program meticulously examines the architectural evolution of Kathmandu, aiming to unravel the intricate layers of cultural influences and historical contexts that shaped its built environment during this pivotal era.
+                            </li>
+                            <li>
+                                Through an interdisciplinary approach encompassing historical research, architectural analysis, and cultural studies, the program seeks to provide a nuanced understanding of how architectural styles in Kathmandu evolved and diversified during the early modern period.
+                            </li>
+                            <li>
+                                By scrutinizing architectural features, construction techniques, and spatial arrangements, the program uncovers the fusion of traditional Newar architecture with external influences, including elements from the Mughal Empire, European colonialism, and regional trade routes.
+                            </li>
+                            <li>
+                                Furthermore, the program showcases iconic architectural landmarks such as palaces, temples, and public buildings, illuminating their significance as symbols of power, religious devotion, and civic pride in early modern Kathmandu.
+                            </li>
+                            <li>
+                                Beyond mere documentation, the program advocates for the preservation and conservation of Kathmandu's early modern architecture as a vital component of the city's cultural heritage. It underscores the importance of proactive measures to safeguard these architectural treasures from threats such as urbanization, neglect, and natural disasters.
+                            </li>
+                            <li>
+                                Through community engagement initiatives, educational outreach, and collaborative partnerships with local authorities and heritage organizations, the program seeks to raise awareness about the historical and cultural significance of Kathmandu's architectural heritage and mobilize support for its preservation and sustainable management.
+                            </li>   
+                            <li>
+                                Ultimately, the program aspires to foster a deeper appreciation for Kathmandu's rich architectural legacy among residents, visitors, scholars, and policymakers alike, ensuring that future generations inherit a vibrant and culturally enriched urban environment that reflects the city's storied past and promising future.
+                            </li>  
+                        </li>
+                    </ul>
+                </div>
                 <div class="col-1 d-flex flex-row-reverse ">
-                    <img src="../images/projects/arrow.png" class="col-4 h-25">
+                    <i></i>
+                    <img src="../images/projects/arrow.png" class="arrow">
                 </div>
             </div>
             <hr>
@@ -86,50 +431,86 @@
                 </div>
             </div>
             <hr>
-            <div class="d-flex flex-row my-5">
-                <div class="col-5">
-                    <h5>Modern Encounters in Architecture</h5>
-                </div>
-                <div class="col-1"></div>
-                <div class="col-5">
-                    <ul>
-                        <li>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur quam ut augue efficitur dignissim. Suspendisse potenti. Praesent et massa ut nunc venenatis egestas. 
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-1 d-flex flex-row-reverse ">
-                    <img src="../images/projects/arrow.png" class="col-4 h-25">
-                </div>
-            </div>
-            <hr>
-        </div>
+        </div> -->
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get all elements with the class "collapse"
+                var collapseElements = document.querySelectorAll('.collapse');
+
+                // Iterate over each collapse element
+                collapseElements.forEach(function(collapseElement) {
+                    // Add event listener to toggle the collapse on button click
+                    collapseElement.previousElementSibling.addEventListener('click', function() {
+                        // Toggle the "show" class to expand/collapse the content
+                        if (collapseElement.classList.contains('show')) {
+                            collapseElement.classList.remove('show');
+                        } else {
+                            collapseElement.classList.add('show');
+                        }
+
+                        // Toggle arrows based on collapse state
+                        toggleArrows(collapseElement);
+                    });
+                });
+
+                // Function to toggle arrows based on collapse state
+                function toggleArrows(collapseElement) {
+                    var arrowHorizontal = collapseElement.previousElementSibling.querySelector('.horizontal-arrow');
+                    var arrowVertical = collapseElement.previousElementSibling.querySelector('.vertical-arrow');
+
+                    if (collapseElement.classList.contains('show')) {
+                        // Content is expanded, show vertical arrow and hide horizontal arrow
+                        arrowVertical.style.display = 'block';
+                        arrowHorizontal.style.display = 'none';
+                    } else {
+                        // Content is collapsed, show horizontal arrow and hide vertical arrow
+                        arrowHorizontal.style.display = 'block';
+                        arrowVertical.style.display = 'none';
+                    }
+                }
+            });
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                feather.replace();
+            });
+        </script>
     </body>
-    <footer>
+
+    <footer class="primary-bg ">
         <hr class="my-0 secondary opacity-100 border-2">
-        <div class="footer-image col-12 d-flex flex-column ">
-            <div class="col-12 container d-flex flex-row mt-5rem">
-                <div class="col-1">
-                    <img src="../images/KI Logo.svg" class="col-10">
+        <div class="footer-image">
+            <div class="container mt-5rem mb-2rem">
+                <div class="row gy-5 gy-sm-0 mt-0 mt-5rem">
+                    <div class="col-sm-6 col-md-4 d-flex align-content-start">
+                        <img src="../images/KI Logo.svg" class="col-3 mx-auto mx-sm-0 ">
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <div class=" d-flex flex-column flex-md-row text-center text-md-end justify-content-between ">
+                            <a href="../home.html"><p class="h9">Home</p></a>
+                            <a href="./about.html"><p class="h9">About Us</p></a>
+                            <a href="./projects.html"><p class="h9">Projects</p></a>
+                            <a href="./getinvolved.html"><p class="h9">Get Involved</p></a>
+                            <a href="./contact.html"><p class="h9">Contact Us</p></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4"></div>
-                <div class="col-7 d-flex flex-row justify-content-between ">
-                    <p class="h9">Home</p>
-                    <p class="h9">About Us</p>
-                    <p class="h9">Projects</p>
-                    <p class="h9">Get Involved</p>
-                    <p class="h9">Contact Us</p>
-                </div>
-            </div>
-            <div class="col-12 container d-flex flex-row mt-5rem mb-2rem">
-                <div class="col-5">
-                    <i data-feather="circle"></i>
-                </div>
-                <div class="col-7 d-flex flex-column">
-                    <p class="h8 col-12 text-start ">GET IN TOUCH</p>
-                    <div class="col-12 d-flex flex-row text-start justify-content-between ">
-                        <p class="h9">kathmanduinstitute@gmail.com</p>
-                        <p class="h9 text-end">© 2024 Kathmandu Institute. All Rights Reserved. </p>
+                <div class="row gy-5 gy-sm-0 mt-0 mt-sm-5">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="col-4 d-flex justify-content-between mx-auto mx-sm-0">
+                            <a href="https://www.instagram.com/"><i data-feather="instagram" class="filled-icon"></i></a>
+                            <a href="https://www.facebook.com/"><i data-feather="facebook" class="thin-stroke-icon"></i></a>
+                            <a href="tel:+1234567890"><i data-feather="phone" class="thin-stroke-icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <p class="h8 text-center text-md-start ">GET IN TOUCH</p>
+                        <div class=" d-flex flex-column flex-md-row text-center text-md-end justify-content-between ">
+                            <p class="h9">kathmanduinstitute@gmail.com</p>
+                            <p class="h9 text-center text-md-end">© 2024 Kathmandu Institute. All Rights Reserved. </p>
+                        </div>
                     </div>
                 </div>
             </div>

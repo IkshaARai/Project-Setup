@@ -1,0 +1,16 @@
+.card1-hover-display {
+    display: none; /* Initially show this */
+}
+
+.card1-hover {
+    display: block; /* Initially hide this */
+}
+
+.col-md-4:hover .card1-hover {
+    display: none; /* Show this on hover */
+}
+
+.col-md-4:hover .card1-hover-display {
+    display: block; /* Hide this on hover */
+}
+

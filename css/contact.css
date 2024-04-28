@@ -17,8 +17,58 @@ input.h10, textarea.h10, ::placeholder {
     border-color: #f2f2f2;
 }
 
+.form-button-styling:hover {
+    border-radius: 0.4rem;
+    padding: 0.4rem 3rem 0.3rem 3rem;
+    border-width: 0.1rem;
+    background-color: #f2f2f2;
+    color: #1D2A30;
+    border-color: #1D2A30;
+}
+
 select.h10 {
     color: #f2f2f2;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.successMessage {
+    background-color: #f2f2f2;
+    color: #1D2A30;
+    border-radius: 0.5rem;
+}
+
+.icon {
+    color: #1D2A30;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+img, svg {
+    fill: #f2f2f2;
+}
+
+footer {
+    .filled-icon {
+        color: #f2f2f2; 
+        width: 2rem; 
+        height: 2rem;
+    }
+    
+    .thin-stroke-icon {
+        color: #1D2A30;
+        stroke-width: 5%;
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    
+    img, svg {
+        fill: #1D2A30;
+    }
 }
 
 /* option{

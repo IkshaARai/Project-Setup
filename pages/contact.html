@@ -10,20 +10,47 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
         <script src="../js/script.js"></script>
+        <script src="../js/script_contact.js"></script>
         <script src="https://unpkg.com/feather-icons"></script>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io//favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
         
     </head>
     <body class="secondary-bg">
-        <nav class="primary-bg fixed-top p-2 shadow">
-            <div class="container d-flex justify-content-between align-content-center py-1 ">
-                <img src="../images/KI Logo.svg" class="col-1 w-auto pe-1 ">
-                <div class="col-3"></div>
-                <div class="col-8 d-flex flex-row justify-content-between secondary">
-                    <a href="../home.html" class="h10 pt-2 mb-0">Home</a>
-                    <a href="./about.html" class="h10 pt-2 mb-0">About Us</a>
-                    <a href="./projects.html" class="h10 pt-2 mb-0">Projects</a>
-                    <a href="./contact.html" class="h8 pt-2 mb-0">Contact Us</a>
-                    <a href="./getinvolved.html"><button class="nav-button h9">Get involved</button></a>
+        <nav id="navbar" class="primary-bg fixed-top p-2 shadow">
+            <div class="container">
+                <div class="mobile-nav d-lg-none py-3 ">
+                    <div class="logo-container">
+                        <img src="../images/KI Logo.svg" class="logo-img">
+                    </div>
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="desktop-nav d-none d-lg-flex justify-content-between align-content-center py-1">
+                    <div class="logo-container col-lg-4 d-flex flex-row justify-content-start align-content-center" >
+                        <img src="../images/KI Logo.svg" class="logo-img">
+                        <div class="logo-text h9 ms-4"><b>KATHMANDU <br> INSTITUTE</b></div>
+                    </div>
+                    <div class="col-lg-8 col-md-9 d-flex flex-row justify-content-between align-items-center secondary">
+                        <a href="../home.html" class="nav-link h10 ">Home</a>
+                        <a href="../pages/about.html" class="nav-link h10 ">About Us</a>
+                        <a href="../pages/projects.html" class="nav-link h10 ">Projects</a>
+                        <a href="../pages/contact.html" class="active-page">Contact Us</a>
+                        <a href="../pages/getinvolved.html"><button class="nav-button h9">Get involved</button></a>
+                    </div>
+                </div>
+                <div class="mobile-nav-links d-lg-none">
+                    <a href="../home.html" class="nav-link h10">Home</a>
+                    <a href="../pages/about.html" class="nav-link h10">About Us</a>
+                    <a href="../pages/projects.html" class="nav-link h10">Projects</a>
+                    <a href="../pages/contact.html" class="nav-link h10">Contact Us</a>
+                    <a href="../pages/getinvolved.html" class="nav-link h10">Get involved</a>
                 </div>
             </div>
         </nav>
@@ -31,92 +58,160 @@
             <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
             <dotlottie-player src="https://lottie.host/e753ce04-5cfc-4a8b-b690-390b1151aec0/JaFZqGLCuq.json" speed="1" loop autoplay></dotlottie-player>
         </div>
-        <div class="container col-12 d-flex flex-row justify-content-between my-8rem">
-            <div class="d-flex flex-column text-center">
+        <div class="container d-flex flex-wrap justify-content-between my-8rem">
+            <div class="d-flex flex-column text-center mx-auto m-sm-5 mt-5 mt-sm-0">
                 <h7 class=" primary">INSTAGRAM</h7>
                 <h7 class="primary pt-2">@kathmanduinstitute</h7>
             </div> 
-            <div class="d-flex flex-column text-center">
+            <div class="d-flex flex-column text-center mx-auto m-sm-5 mt-5 mt-sm-0">
                 <h7 class=" primary">EMAIL</h7>
                 <h7 class="primary pt-2">ktminstitute@gmail.com</h7>
             </div> 
-            <div class="d-flex flex-column text-center">
+            <div class="d-flex flex-column text-center mx-auto m-sm-5 mt-5 mt-sm-0">
                 <h7 class=" primary">PHONE</h7>
                 <h7 class="primary pt-2">+91 9823611017</h7>
             </div> 
-            <div class="d-flex flex-column text-center">
+            <div class="d-flex flex-column text-center mx-auto m-sm-5 mt-5 mt-sm-0">
                 <h7 class=" primary">FACEBOOK</h7>
                 <h7 class="primary pt-2">@kathmanduinstitute</h7>
             </div> 
         </div>
         <hr class="primary">
-        <div class="container col-12 d-flex flex-row my-8rem">
-            <h6 class="primary col-3">Fill out this form and let us know what queries you have</h6>
-            <div class="col-1"></div>
-            <form onsubmit="return false" class="col-8">
-                <div class="d-flex flex-row col-12">
-                    <div class="col-1"></div>
-                    <div class=" col-5">
-                        <input type="name" placeholder="Name" id="name" class="col-12 px-3 py-1 h10 rounded-2">
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="col-5">
-                        <select id="selCountry" class="col-12 px-3 pt-3 pb-2 h10 rounded-2">
-                            <option style="background-color: #485257;" selected value="">Choose Subject</option>
-                            <option style="background-color: #485257;" value="Goal 1">Volunteering</option>
-                            <option style="background-color: #485257;" value="Goal 2">Collaboration</option>
-                            <option style="background-color: #485257;" value="Goal 3">Donations</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="d-flex flex-row col-12 mt-4 ">
-                    <div class="col-1"></div>
-                    <div class=" col-5">
-                        <input type="name" placeholder="Email Address" id="name" class="col-12 px-3 py-1 h10 rounded-2">
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="box col-5">
-                        <input type="surname" placeholder="Phone Number" id="surname" class="col-12 px-3 py-1 h10 rounded-2 ">
-                    </div>
-                </div>
-                <div class="col-12 d-flex flex-row mt-4 ">
-                    <div class="col-1"></div>
-                    <textarea id="msg" name="msg" placeholder="Type your message here.." style="height:8rem;" class="col-11 px-3 py-1 rounded-2 h10 "></textarea>
-                </div>
-                <div class="col-12 d-flex justify-content-end mt-4 ">
-                    <button class="h9 form-button-styling">Submit</button>
-                </div>
-            </form>
-        </div>
-    </body>
-    <footer class="primary-bg">
-        <hr class="my-0 secondary opacity-100 border-2">
-        <div class="footer-image col-12 d-flex flex-column ">
-            <div class="col-12 container d-flex flex-row mt-5rem">
-                <div class="col-1">
-                    <img src="../images/KI Logo.svg" class="col-10">
-                </div>
-                <div class="col-4"></div>
-                <div class="col-7 d-flex flex-row justify-content-between ">
-                    <p class="h9">Home</p>
-                    <p class="h9">About Us</p>
-                    <p class="h9">Projects</p>
-                    <p class="h9">Get Involved</p>
-                    <p class="h9">Contact Us</p>
-                </div>
+        <div class="container d-flex flex-wrap my-8rem justify-content-between ">
+            <div class=" col-sm-12 col-md-3 mt-4">
+                <h6 class="primary col-12" >Fill out this form and let us know what queries you have</h6>
             </div>
-            <div class="col-12 container d-flex flex-row mt-5rem mb-2rem">
-                <div class="col-5">
-                    <i data-feather="circle"></i>
+            <div class=" col-sm-12 col-md-8">
+                <form onsubmit="return validateForm()" class="col-12">
+                    <div class="d-flex row justify-content-between mt-4">
+                        <div class="col-6">
+                            <input type="text" placeholder="Name" id="name" class="col-12 px-3 py-1 h10 rounded-2">
+                            <div id="nameError" class="error-message" style="display: none;">*Please enter your name</div>
+                        </div>
+                        <div class="col-6" id="contactus-form">
+                            <select id="selSubject" class="col-12 px-2 pt-3 pb-2 h10 rounded-2">
+                                <option style="background-color: #485257;" value="">Choose Subject</option>
+                                <option style="background-color: #485257;" value="volunteering">Volunteering</option>
+                                <option style="background-color: #485257;" value="donation">Donation</option>
+                                <option style="background-color: #485257;" value="collaboration">Collaboration</option>
+                                <option style="background-color: #485257;" value="others">Others</option>
+                            </select>
+                            <div id="subjectError" class="error-message" style="display: none;">*Please choose a subject</div>
+                        </div>
+                    </div>
+                    <div class="d-flex row justify-content-between mt-4">
+                        <div class="col-6">
+                            <input type="email" placeholder="Email Address" id="email" class="col-12 px-3 py-1 h10 rounded-2">
+                            <div id="emailError" class="error-message" style="display: none;">*Please enter your email address</div>
+                        </div>
+                        <div class="box col-6">
+                            <input type="tel" placeholder="Phone Number" id="phone" class="col-12 px-3 py-1 h10 rounded-2" pattern="[0-9]*">
+                            <div id="phoneError" class="error-message" style="display: none;">*Please enter your phone number</div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex flex-wrap mt-4">
+                        <textarea id="msg" name="msg" placeholder="Type your message here.." style="height:8rem;" class="col-12 px-3 py-1 rounded-2 h10"></textarea>
+                        <div id="msgError" class="error-message" style="display: none;">*Please enter your message</div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end mt-4">
+                        <button type="submit" class="h9 form-button-styling">Submit</button>
+                    </div>
+                    <div id="successMessage" class="col-12 mt-5 p-3 text-center successMessage" style="display: none;"><i data-feather="check-circle" class="icon me-3 "></i>Thank you for submitting your form! We will be in touch with you shortly.</div>
+                </form>                                            
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                feather.replace();
+            });
+        </script>
+        <script>
+            // Function to get URL parameter value
+            function getUrlParameter(name) {
+                name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+                var results = regex.exec(location.search);
+                return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+            };
+        
+            // Pre-select option based on type parameter
+            var type = getUrlParameter('type');
+            if (type) {
+                document.getElementById('selSubject').value = type;
+            }
+        </script>
+        
+    </body>
+    <footer class="primary-bg ">
+        <hr class="my-0 secondary opacity-100 border-2">
+        <div class="footer-image">
+            <div class="container mt-5rem mb-2rem">
+                <div class="row gy-5 gy-sm-0 mt-0 mt-5rem">
+                    <div class="col-sm-6 col-md-4 d-flex align-content-start">
+                        <img src="../images/KI Logo.svg" class="col-3 mx-auto mx-sm-0">
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <div class=" d-flex flex-column flex-md-row text-center text-md-end justify-content-between ">
+                            <a href="../home.html"><p class="h9">Home</p></a>
+                            <a href="./about.html"><p class="h9">About Us</p></a>
+                            <a href="./projects.html"><p class="h9">Projects</p></a>
+                            <a href="./getinvolved.html"><p class="h9">Get Involved</p></a>
+                            <a href="./contact.html"><p class="h9">Contact Us</p></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-7 d-flex flex-column">
-                    <p class="h8 col-12 text-start ">GET IN TOUCH</p>
-                    <div class="col-12 d-flex flex-row text-start justify-content-between ">
-                        <p class="h9">kathmanduinstitute@gmail.com</p>
-                        <p class="h9 text-end">© 2024 Kathmandu Institute. All Rights Reserved. </p>
+                <div class="row gy-5 gy-sm-0 mt-0 mt-sm-5">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="col-4 d-flex justify-content-between mx-auto mx-sm-0">
+                            <a href="https://www.instagram.com/"><i data-feather="instagram" class="filled-icon"></i></a>
+                            <a href="https://www.facebook.com/"><i data-feather="facebook" class="thin-stroke-icon"></i></a>
+                            <a href="tel:+1234567890"><i data-feather="phone" class="thin-stroke-icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <p class="h8 text-center text-md-start ">GET IN TOUCH</p>
+                        <div class=" d-flex flex-column flex-md-row text-center text-md-end justify-content-between ">
+                            <p class="h9">kathmanduinstitute@gmail.com</p>
+                            <p class="h9 text-center text-md-end">© 2024 Kathmandu Institute. All Rights Reserved. </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- <footer class="primary-bg ">
+        <hr class="my-0 secondary opacity-100 border-2">
+        <div class="footer-image">
+            <div class="container mt-5rem mb-2rem">
+                <div class="row gy-5 gy-sm-0 mt-0 mt-5rem">
+                    <div class="col-sm-6 col-md-4">
+                        <img src="../images/KI Logo.svg" class="col-3 mx-auto mx-sm-0 align-content-sm-start">
+                    </div>
+                    <div class=" d-flex flex-column flex-md-row text-center text-md-end justify-content-between ">
+                        <a href="../home.html"><p class="h9">Home</p></a>
+                        <a href="./about.html"><p class="h9">About Us</p></a>
+                        <a href="./projects.html"><p class="h9">Projects</p></a>
+                        <a href="./getinvolved.html"><p class="h9">Get Involved</p></a>
+                        <a href="./contact.html"><p class="h9">Contact Us</p></a>
+                    </div>
+                </div>
+                <div class="row gy-5 gy-sm-0 mt-0 mt-sm-5">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="col-4 d-flex justify-content-between mx-auto mx-sm-0">
+                            <a href="https://www.instagram.com/"><i data-feather="instagram" class="filled-icon"></i></a>
+                            <a href="https://www.facebook.com/"><i data-feather="facebook" class="thin-stroke-icon"></i></a>
+                            <a href="tel:+1234567890"><i data-feather="phone" class="thin-stroke-icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <p class="h8 text-center text-md-start ">GET IN TOUCH</p>
+                        <div class=" d-flex flex-column flex-md-row text-center text-md-end justify-content-between ">
+                            <p class="h9">kathmanduinstitute@gmail.com</p>
+                            <p class="h9 text-center text-md-end">© 2024 Kathmandu Institute. All Rights Reserved. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
 </html>
